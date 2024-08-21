@@ -1,0 +1,52 @@
+/* Reseta as margens, preenchimentos e define o box-sizing globalmente */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive; /* Define a fonte como cursiva para todo o documento */
+}
+
+/* Define o estilo do corpo da página */
+body {
+    height: 100vh; /* Define a altura da página para 100% da altura da janela */
+    display: flex;
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    background-image: #f7f7f7; /* Define a cor de fundo */
+}
+
+/* Estilo principal para o conteúdo dentro da tag <main> */
+main {
+    display: flex;
+    flex-direction: column; /* Organiza os itens em uma coluna */
+    gap: 5px; /* Espaçamento entre os itens */
+}
+
+/* Estilo do título principal */
+h1 {
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilo para a linha horizontal */
+hr {
+    font-weight: bold; /* Define a fonte como negrito */
+    height: 3px; /* Define a altura da linha */
+    background: black; /* Define a cor da linha */
+    margin-bottom: 10px; /* Espaçamento abaixo da linha */
+}
+
+/* Estilo para a grade de botões do jogo */
+.game {
+    display: grid; /* Define o layout da grade */
+    grid-template-columns: 1fr 1fr 1fr; /* Três colunas de largura igual */
+}
+
+/* Estilo dos botões do jogo */
+.game button {
+    width: 100px; /* Largura dos botões */
+    height: 100px; /* Altura dos botões */
+    margin: 5px; /* Espaçamento ao redor dos botões */
+    cursor: pointer; /* Define o cursor como ponteiro quando sobre o botão */
+    font-size: 50px; /* Tamanho da fonte no botão */
+    background: white; /* Cor de fundo dos botões */
+}
